@@ -1,0 +1,24 @@
+/* # CHAMA PARA O TIPO ID*/
+#amarelo{ 
+    color : yellow;
+}
+#vermelho{ 
+    color : red;
+}
+#azul{ 
+    color : blue;
+}
+#marron{ 
+    color : maroon;
+}
+#violeta{ 
+    color : rebeccapurple;
+} 
+
+img {
+    width: 120px;
+    height: 120px;
+}
+h3{
+    font-weight: normal;
+}
