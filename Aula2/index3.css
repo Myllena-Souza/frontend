@@ -1,0 +1,28 @@
+h2{
+    color: orange;
+}
+
+h5{
+    color: orange;
+}
+.Roupas{
+    color: blue;
+}
+li{
+    color: red;
+}
+li.usada{
+    color: violet;
+}
+.alimentos{
+    color: cyan;
+}
+.moveis{
+    color: blue
+}
+.moveis > .usada{
+    color:blueviolet;
+}
+.tipoMaterial{
+    color: orangered;
+}
