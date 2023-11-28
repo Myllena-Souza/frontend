@@ -1,0 +1,28 @@
+.caixa {
+    background-color: blue;
+    width: 200px;
+    height:200px;
+}
+
+/*entre 150px e 200px*/
+@media (min-width:773px) and (max-width: 1100px) {
+    .caixa {
+        background-color: pink;
+        width: 50px;
+        height:50px;
+    }
+}
+@media (max-width: 772px){
+    .caixa{
+        background-color: blueviolet;
+        width: 80px;
+        height:80px;
+    }     
+}
+@media (min-width: 1101px){
+    .caixa{
+        background-color: rgb(58, 226, 43);
+        width: 80px;
+        height:80px;
+    }     
+}
