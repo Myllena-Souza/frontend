@@ -1,5 +1,5 @@
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hedvig Letters Serif', serif;
   background-color: #FFF;
 }
 
@@ -47,12 +47,12 @@ body{
 
 .roteiro-obs{
   font-size: 0.7rem;
-  color: #620fce;
+  color: #020202;
 }
 
 .roteiro-parcelamento{
   font-size: 0.7rem;
-  color: #620fce;
+  color: #000000;
 }
 
 .roteiro-comprar{
