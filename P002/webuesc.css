@@ -1,23 +1,23 @@
 body{
-    font-family: 'Times', Hedvig Letters Serif;
-    background-color: beige;
+    font-family: 'Hedvig Letters Serif', serif;
+    background-color: bisque;
 }
 
-.menu {
+.divisao1 {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 20%;
     grid-gap: 5px;
 }
 
-.noticias{
+.divisao2{
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-gap: 5px;  
     margin-top: 5px;
 }
 header {
-    background-color: #ffffff;
+    background-color: bisque;
     padding: 20px;
     margin-top: 10px;
     text-align: center;
@@ -25,36 +25,56 @@ header {
     color: rgb(1, 1, 1);
 }
 
-footer {
-    background-color: #f6efef;
-    padding: 20px;
-    margin-top: 12px;
-    text-align: center;
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
     border: 1px solid #000;
-    color: rgba(236, 8, 35, 0.901);
 }
 
-.cabeçalho{
+.box{
+    border: 1px solid #000; 
+}
+
+.destaque{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+}
+.cabeçalho {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+}
+.imagens{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    row-gap: 10px;
+}
+
+section{
+    background-color: #fff;
+    border: 1px solid #000;
+    overflow: auto;
 
 }
 
 @media (max-width: 500px) {
-    .menu {
+    .divisao1 {
         grid-template-columns: 1fr;
     }
 
-    .noticias {
+    .divisao2 {
         grid-template-columns: 1fr;
     }
 
     header {
         width: 100%;
         box-sizing: border-box;
-    }
-
-    footer {
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: auto;
     }
 }

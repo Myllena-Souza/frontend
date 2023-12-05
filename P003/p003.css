@@ -1,3 +1,25 @@
+@media (min-width: 1200px) {
+  .container-destinos{
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(216, 223, 223);
+      gap: 10px;
+      justify-content: center;
+      color: rgb(93, 18, 163);
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-destinos{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      color: rgb(93, 18, 163);
+      align-items: center;
+  }
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #FFF;
@@ -76,7 +98,7 @@ ul{
   padding: 0;
 }
 
-@media (max-width: 1200px){
+/*@media (max-width: 1200px){
   .container-destinos{
       flex-direction: column;
   }
