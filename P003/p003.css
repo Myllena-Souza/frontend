@@ -1,25 +1,3 @@
-@media (min-width: 1200px) {
-  .container-destinos{
-      display: flex;
-      flex-direction: row;
-      background-color: rgb(216, 223, 223);
-      gap: 10px;
-      justify-content: center;
-      color: rgb(93, 18, 163);
-  }
-}
-
-@media (max-width: 1200px) {
-  .container-destinos{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      justify-content: center;
-      color: rgb(93, 18, 163);
-      align-items: center;
-  }
-}
-
 body{
   font-family: 'Roboto', sans-serif;
   background-color: #FFF;
@@ -50,31 +28,31 @@ body{
 .roteiro-destino{
   font-size: 1.2rem;
   font-weight: bold;
-  color: #7549af;
+  color: #620fce;
   margin: 10px 0;
 }
 
 .roteiro-incluso{
   font-size: 1rem;
-  color: #7549af;
+  color: #620fce;
   margin: 10px 0;
 }
 
 .roteiro-preco{
   font-size: 1.2rem;
   font-weight: bold;
-  color: #7549af;
+  color: #620fce;
   margin-top: 10px;
 }
 
 .roteiro-obs{
   font-size: 0.7rem;
-  color: #7549af;
+  color: #620fce;
 }
 
 .roteiro-parcelamento{
   font-size: 0.7rem;
-  color: #7549af;
+  color: #620fce;
 }
 
 .roteiro-comprar{
@@ -85,11 +63,11 @@ body{
   border: none;
   border-radius: 5px;
   padding: 10px;
-  background-color: #88d528;
+  background-color: #84e60d;
 }
 
 .roteiro-comprar:hover{
-  background-color: #6cb21e;
+  background-color: #84e60d;
   cursor: pointer;
 }
 
@@ -98,7 +76,7 @@ ul{
   padding: 0;
 }
 
-/*@media (max-width: 1200px){
+@media (max-width: 1200px){
   .container-destinos{
       flex-direction: column;
   }
