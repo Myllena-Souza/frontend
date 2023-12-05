@@ -1,0 +1,12 @@
+.container-destinos{
+  display: flex;
+  gap: 20px;
+  background-color: blueviolet;
+  padding: 20px;
+
+}
+
+img {
+  width: 150px;
+  height: 100px;
+}

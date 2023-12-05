@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-row-gap: 10px;
+            grid-column-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+           
+        }
+        .A1{
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .A2{
+            background-color: orange;
+            grid-column-start: 1;
+            
+        }
+        .A3{
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+        .A4{
+            background-color: cyan;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 6;
+
+
+        }
+        .A5{
+            background-color: maroon;
+            grid-row-start: 6;
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        .A6{
+            background-color: red;
+            grid-column-start: 4;
+            grid-row-start: 1;
+            grid-row-end: 7;
+
+        }
+        .item{
+            padding: 20px; 
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <div class ="item A1">Header</div>
+        <div class ="item A2">Caixa 1</div>
+        <div class ="item A3">Caixa 2</div>
+        <div class ="item A4">Conteúdo</div>
+        <div class ="item A5">Footer</div>
+        <div class ="item A6">Barra Lateral</div>
+
+    </div>
+</body>
+</html>
