@@ -55,7 +55,7 @@ body{
   color: #000000;
 }
 
-.roteiro-comprar{
+.roteiro-comprar {
   font-size: 1.2rem;
   font-weight: bold;
   color: #FFF;
@@ -64,11 +64,18 @@ body{
   border-radius: 5px;
   padding: 10px;
   background-color: #84e60d;
+  transition-property: width;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(34, 141, 70)
 }
 
-.roteiro-comprar:hover{
-  background-color: #84e60d;
-  cursor: pointer;
+.roteiro-comprar:hover {
+  background-color: #63ad0e;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.roteiro-comprar:active {
+  transform: translate(0px , 9px); 
 }
 
 ul{
