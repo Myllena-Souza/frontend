@@ -14,22 +14,15 @@ const fetchData = (url) => {
   fetchData('https://v2.jokeapi.dev/joke/Any?type=single')
     .then((data) => {
         const li = document.createElement('li');
-        const piada = "Ditado do dia: " + data.joke
+        const piada = "Confira o pensamento do dia: " + data.joke
         li.textContent = piada;
         noticiasQuadro.appendChild(li);
     });
-  
+
     fetchData('https://v2.jokeapi.dev/joke/Any?type=single')
     .then((data) => {
         const li = document.createElement('li');
-        const piada = "Está na boca do povo: " + data.joke
-        li.textContent = piada;
-        noticiasQuadro.appendChild(li);
-    });
-    fetchData('https://v2.jokeapi.dev/joke/Any?type=single')
-    .then((data) => {
-        const li = document.createElement('li');
-        const piada = "A piada do momento: " + data.joke
+        const piada = "Veja uma piada : " + data.joke
         li.textContent = piada;
         noticiasQuadro.appendChild(li);
     });
@@ -38,7 +31,7 @@ const fetchData = (url) => {
     .then((data) => {
         console.log(data[0].flags.alt)
         const p = document.createElement('p');
-        const texto =  "Aulas de inglês, aprenda: " + data[0].flags.alt
+        const texto =  "Conheça mais sobre o seu país: " + data[0].flags.alt
         p.textContent = texto;
         servicoQuadro.appendChild(p);
     });
