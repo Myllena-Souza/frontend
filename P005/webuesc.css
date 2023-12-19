@@ -63,7 +63,6 @@ section{
     background-color: #fff;
     border: 1px solid #000;
     overflow: auto;
-
 }
 
 @media (max-width: 500px) {
