@@ -5,17 +5,7 @@
   "projects": {
     "UESC-app": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -103,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "81f21662-d687-43c2-9656-0880c3b2c063"
+    "analytics": false
   }
 }
