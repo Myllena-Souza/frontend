@@ -7,6 +7,8 @@ import { DestaquesComponent } from './destaques/destaques.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { ServicosComponent } from './servicos/servicos.component';
 import { ResultadosComponent } from './resultados/resultados.component';
+import { ContainerMenuNoticiasDestaquesComponent } from './container-menu-noticias-destaques/container-menu-noticias-destaques.component';
+import { ContainerServicosResultadosComponent } from './container-servicos-resultados/container-servicos-resultados.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ResultadosComponent } from './resultados/resultados.component';
     DestaquesComponent,
     NoticiasComponent,
     ServicosComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    ContainerMenuNoticiasDestaquesComponent,
+    ContainerServicosResultadosComponent
   ],
   imports: [
     BrowserModule,

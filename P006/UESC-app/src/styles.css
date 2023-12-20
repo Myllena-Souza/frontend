@@ -1,4 +1,3 @@
-
 body{
     font-family: 'Hedvig Letters Serif', serif;
     background-color: bisque;
@@ -18,6 +17,12 @@ section{
     border: 1px solid #000;
     overflow: auto;
 
+}
+.cabeçalho {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
 }
 
 @media (max-width: 500px) {
