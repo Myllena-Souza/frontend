@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carrinho',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './carrinho.component.css'
 })
 export class CarrinhoComponent {
-
+  @Input() salvos:any;
+  json:string[] = [];
+  adicionarVeiculo(){
+    this.json.push(this.salvos);
+    console.log(this.json);
+  }
 }

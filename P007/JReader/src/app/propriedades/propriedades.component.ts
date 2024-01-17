@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-propriedades',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './propriedades.component.css'
 })
 export class PropriedadesComponent {
-
+  @Input() propriedades:any;
+  @Output() propriedadeSelecionada = new EventEmitter<any>();
+  selecionado(propriedade:any){
+    this.propriedadeSelecionada.emit(propriedade);
+  }
 }
