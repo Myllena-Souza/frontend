@@ -12,8 +12,9 @@ export class AppComponent {
       setTimeout(() => {
         resolve("Promise resolvida");
       }, 2000)});
-    
-  
+      
+  data_de_hoje = new Date();
+
 
   //utilizando async await
   getNomePaises(){
