@@ -1,6 +1,6 @@
 #divBusca{
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
+    background-color:#e2ece4;
+    border:solid 2px #80f389;
     border-radius:10px;
     width:300px;
     height:32px;
@@ -23,7 +23,7 @@
     border-radius:0 7px 7px 0;
     width:70px;
     font-weight:bold;
-    background:#5F9EA0;
+    background:#80f389;
   }
   
   #divBusca img{
