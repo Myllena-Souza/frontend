@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, from } from 'rxjs';
+import { Observable, from, take, interval} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,16 +8,25 @@ export class ExemplosObservableService {
 
   constructor() { }
 
-  getValores():Observable<any>{
-    const observable = new Observable((subscriber) => {
-      subscriber.next(1);
-      subscriber.next(2);
-      subscriber.next(3);
-      setTimeout(() => {
-        subscriber.next(4);
-        subscriber.complete();
-      }, 1000);
+  getValores(): Observable<any> {
+    const observable = new Observable((subscriber: { next: (arg0: number) => void; complete: () => void; }) => {
+      const subscription = interval(1000)
+        .pipe(
+          take(100) 
+        )
+        .subscribe({
+          next: (value: number) => {
+            subscriber.next(value);
+          },
+          complete: () => {
+            subscriber.complete();
+          }
+        });
+  
+      // Cancelar a assinatura ao limpar o observable
+      return () => subscription.unsubscribe();
     });
+  
     return observable;
   }
 
@@ -31,33 +40,4 @@ export class ExemplosObservableService {
     //e registrar cada valor emitido, verá 1, 2, 3, 4, 5
     // registrado, nessa ordem.
 
-    getNumeros():Observable<any>{
-      const source = from([1, 2, 3, 4, 5]);
-      return source;
-    }
-
-
-    getPaises():Promise<Pais[]> {
-      let lista_paises: Pais[] = [];
-
-      return fetch('https://restcountries.com/v3.1/all')
-      .then((response) => response.json())
-      .then((data) => {
-        data.forEach((country: Pais) => {
-          lista_paises.push(country);
-        });
-        return lista_paises;
-      })              
-      .catch(error => {
-        console.error('There was an error!', error);
-        return lista_paises;
-      });
-  }
-}
-
-interface Pais {
-  name: {
-    common: string;
-  };
-  population: number;
 }
