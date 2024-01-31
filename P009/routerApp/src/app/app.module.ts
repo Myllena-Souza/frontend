@@ -5,10 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RoteirosComponent } from './roteiros/roteiros.component';
 import { SiteuescComponent } from './siteuesc/siteuesc.component';
-import { WikiComponent } from './wiki/wiki.component';
-import { BarraDeBuscaComponent } from './barra-de-busca/barra-de-busca.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ResultadoPesquisaComponent } from './resultado-pesquisa/resultado-pesquisa.component';
 import { JReaderComponent } from './jreader/jreader.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { ClassesComponent } from './classes/classes.component';
@@ -24,9 +21,6 @@ import { MatTabsModule } from '@angular/material/tabs'
     AppComponent,
     RoteirosComponent,
     SiteuescComponent,
-    WikiComponent,
-    BarraDeBuscaComponent,
-    ResultadoPesquisaComponent,
     JReaderComponent,
     CarrinhoComponent,
     ClassesComponent,

@@ -1,17 +1,21 @@
 .divisao1 {
+    font-family: 'Hedvig Letters Serif', serif;
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 20%;
-    grid-gap: 5px;
+    grid-gap: 10px;
+    border: 1px solid #000;
 }
 
 .divisao2{
+    font-family: 'Hedvig Letters Serif', serif;
     display: grid;
     grid-template-columns: 1fr 400px;
     grid-gap: 5px;  
     margin-top: 5px;
 }
 header {
+    font-family: 'Hedvig Letters Serif', serif;
     background-color: bisque;
     padding: 20px;
     margin-top: 10px;
@@ -30,7 +34,9 @@ footer {
 }
 
 .box{
-    border: 1px solid #000; 
+    border: 1px solid #000;
+    
+    
 }
 
 .destaque{
