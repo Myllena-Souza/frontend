@@ -4,17 +4,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogsenhaComponent } from './logsenha/logsenha.component';
+import { FormReativoComponent } from './formularioreativo/formularioreativo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LogsenhaComponent
+    LogsenhaComponent,
+    FormReativoComponent
   ],
   imports: [
+    NgModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormReativoComponent
     
   ],
   providers: [],

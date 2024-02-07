@@ -1,0 +1,34 @@
+<!-- directive formGroup -->
+<!-- directive formControlName -->
+<form [formGroup]="exemploForm" (ngSubmit)="onSubmit()">
+    <label for="estacaoClimatica">Estação Climatica:</label>
+
+    <input 
+        formControlName="estacaoClimatica"
+        name="estacaoClimatica"> <br>
+    
+    <label for="email">E-mail:</label>
+
+    <input formControlName="email" name="email">
+    <div *ngIf="exemploForm.get('email')?.errors?.['invalidEmail']">
+        <p>Email invalido</p>
+    </div>
+
+    <label for="localizacao">Localizacao:</label>
+        <input 
+            formControlName="localizacao"
+            name="localizacao">
+        <br>
+
+    <label>
+        Modelo:
+        <input 
+            formControlName="modelo">
+            <span *ngIf="!exemploForm.get('modelo')?.valid &&
+            exemploForm.get('modelo')?.touched">Min:3 Max:10 caracteres</span>
+            <br>
+    </label>
+
+    <button type="submit">Enviar</button>   
+</form>
+
