@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-logsenha',
@@ -8,8 +8,6 @@ import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '
 })
 export class LogsenhaComponent {
   exemploForm: FormGroup;
-  labelLogs = ['Data:', 'Origem:', 'Destino:']; 
-  y: number = 0;
 
   constructor() { 
     this.exemploForm = new FormGroup({
