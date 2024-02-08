@@ -3,8 +3,8 @@ import { AbstractControl, FormArray, FormControl, FormGroup, Validators } from '
 
 @Component({
   selector: 'app-form-reativo',
-  templateUrl: './form-reativo.component.html',
-  styleUrls: ['./form-reativo.component.css']
+  templateUrl: './formularioreativo.component.html',
+  styleUrls: ['./formularioreativo.component.css']
 })
 export class FormReativoComponent implements OnInit{
   exemploForm: FormGroup;

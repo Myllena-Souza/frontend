@@ -13,12 +13,10 @@ import { FormReativoComponent } from './formularioreativo/formularioreativo.comp
     FormReativoComponent
   ],
   imports: [
-    NgModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
-    FormReativoComponent
+    ReactiveFormsModule
     
   ],
   providers: [],
