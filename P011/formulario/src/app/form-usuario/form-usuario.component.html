@@ -1,1 +1,15 @@
-<p>form-usuario works!</p>
+<form [formGroup]="exemploForm" (ngSubmit)="onSubmit()">
+    <label for="login">Login:</label>
+    <input 
+        formControlName="login"
+        name="login"> <br>
+    <label>
+    </label>
+    <label for="senha">Senha:</label>
+    <input 
+        type="password"
+        formControlName="senha"
+        name="senha">>
+
+    <button type="submit">Enviar</button>   
+</form>
