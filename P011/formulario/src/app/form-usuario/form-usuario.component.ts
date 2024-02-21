@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-usuario',
@@ -7,8 +7,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
   styleUrl: './form-usuario.component.css'
 })
 export class FormUsuarioComponent {
-  exemploForm: FormGroup | undefined;
-  userForm: FormGroup<{ username: FormControl<string | null>; password: FormControl<string | null>; email: FormControl<string | null>; fullName: FormControl<string | null>; phone: FormControl<string | null>; address: FormControl<string | null>; birthDate: FormControl<string | null>; gender: FormControl<string | null>; profession: FormControl<string | null>; agreeTerms: FormControl<boolean | null>; }>;
+  userForm: FormGroup
 
   constructor(private fb: FormBuilder) {
     this.userForm = this.fb.group({
