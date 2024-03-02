@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #000000;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;
+  }
+  
+  div[style] {
+    flex-direction: row;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  input, select, textarea {
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: #046ffc;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    
+  }
+  
+  button:hover {
+    background-color: rgb(0, 217, 255);
+  }
+  
+  @media (max-width: 200px) {
+    form {
+      padding: 20px;
+    }
+  }
+  
