@@ -4,7 +4,7 @@
           <mat-card-title>Editar dados de Atendimento</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <form formGroup="atendimentoForm" (ngSubmit)="salvarAtendimento()" >
+          <form [formGroup]="atendimentoForm" (ngSubmit)="salvarAtendimento()" >
             <!-- Informações do Cliente -->
     
             <mat-form-field appearance="fill">

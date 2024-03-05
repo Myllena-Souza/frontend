@@ -25,7 +25,7 @@ export class DataBaseService implements OnInit {
   }) {
     this.http
       .post(
-        '',
+        'https://petshop-89344-default-rtdb.firebaseio.com/atendimento.json',
         atendimentoData
       )
       .subscribe((responseData) => {
@@ -34,13 +34,10 @@ export class DataBaseService implements OnInit {
   }
 
   getAtendimentos() {
-    //generics da interface Atendimento
-    //vem do firebase nesse formato
-    //ahsduiashuhui:Object
-    //dasdasdasdasd:Object
+
     return this.http
       .get<{ [key: string]: Atendimento }>(
-        '',
+        'https://petshop-89344-default-rtdb.firebaseio.com/atendimento.json',
         {
           params: new HttpParams().set('print', 'pretty'),
         }
@@ -60,20 +57,20 @@ export class DataBaseService implements OnInit {
 
   deleteAllAtendimento() {
     return this.http.delete(
-      ''
+      'https://petshop-89344-default-rtdb.firebaseio.com/atendimento.json'
     );
   }
 
   getAtendimento(id: string) {
     return this.http.get<Atendimento>(
-      ``
+      `https://petshop-89344-default-rtdb.firebaseio.com/atendimento/${id}.json`
     );
   }
 
   editarAtendimento(
     id: string,
     atendimentoData: {
-      nomeCliente: string;
+      nomeTutor: string;
       email: string;
       telefone: string;
       nomeAnimal: string;
@@ -83,7 +80,7 @@ export class DataBaseService implements OnInit {
     }
   ) {
     return this.http.put(
-      ``,
+      `https://petshop-89344-default-rtdb.firebaseio.com//${id}.json`,
       atendimentoData,
       { observe: 'response' }
     );

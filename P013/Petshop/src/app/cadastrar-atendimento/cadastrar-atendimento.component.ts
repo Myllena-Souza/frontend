@@ -16,10 +16,8 @@ export class CadastrarAtendimentoComponent implements OnInit{
   }
 
   addAtendimento(atendimentoForm: any){
-    // Obtenha os valores do formulário
+    
     const atendimentoData = atendimentoForm.value;
-    // Envie apenas os dados inseridos para o serviço
-    //Apenas enviando os dados inseridos, sem nenhuma validação.
     this.dataBaseService.addAtendimento(atendimentoData);
   }
 }
