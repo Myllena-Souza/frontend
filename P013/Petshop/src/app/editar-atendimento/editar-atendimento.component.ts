@@ -35,7 +35,7 @@ export class EditarAtendimentoComponent {
     console.log("id-->"    + id);
     this.dataBaseService.getAtendimento(id).subscribe(responseData => {
       console.log(responseData);
-      this.atendimentoForm.setValue(responseData);
+      this.atendimentoForm.setValue (responseData);
     })
   }
 
@@ -51,7 +51,7 @@ export class EditarAtendimentoComponent {
 
 redirecionaPrincipal(){
   setTimeout(() => {
-    this.rotas.navigate(['listarAtendimentos']);
+    this.rotas.navigate(['listarAtendimento']);
   }, 2000);
 }
 }
