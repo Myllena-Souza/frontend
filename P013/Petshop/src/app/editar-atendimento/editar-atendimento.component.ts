@@ -17,7 +17,7 @@ export class EditarAtendimentoComponent {
 
   ngOnInit(){
     this.atendimentoForm = this.formConstrutor.group({
-      nomeCliente: ['', Validators.required],
+      nomeTutor: ['', Validators.required],
       email: ['', Validators.required, EmailValidator],
       telefone: ['', Validators.required],
       nomeAnimal: ['', Validators.required],

@@ -58,7 +58,7 @@ export class DataBaseService implements OnInit {
       );
   }
 
-  deleteAllAtendimentos() {
+  deleteAllAtendimento() {
     return this.http.delete(
       ''
     );

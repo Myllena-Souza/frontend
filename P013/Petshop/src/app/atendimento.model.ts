@@ -1,5 +1,5 @@
 export interface Atendimento {
-    nomeCliente: string;
+    nomeTutor: string;
     email: string;
     telefone: string;
     nomeAnimal: string;

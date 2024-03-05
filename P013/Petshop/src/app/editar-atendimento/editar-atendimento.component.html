@@ -4,12 +4,12 @@
           <mat-card-title>Editar dados de Atendimento</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <form [formGroup]="atendimentoForm" (ngSubmit)="salvarAtendimento()" >
+          <form formGroup="atendimentoForm" (ngSubmit)="salvarAtendimento()" >
             <!-- Informações do Cliente -->
     
             <mat-form-field appearance="fill">
-              <mat-label>Nome do Cliente</mat-label>
-              <input matInput formControlName="nomeCliente" ngModel required>
+              <mat-label>Nome do Tutor</mat-label>
+              <input matInput formControlName="nomeTutor" ngModel required>
             </mat-form-field>
     
             <mat-form-field id="email" appearance="fill">

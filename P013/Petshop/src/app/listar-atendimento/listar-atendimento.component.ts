@@ -6,28 +6,26 @@ import { Atendimento } from '../atendimento.model';
   templateUrl: './listar-atendimento.component.html',
   styleUrl: './listar-atendimento.component.css'
 })
-export class ListarAtendimentosComponent implements OnInit {
+export class ListarAtendimentoComponent implements OnInit {
 
-  loadedAtendimentos: Atendimento[] = [];
+  loadedAtendimento: Atendimento[] = [];
   constructor(private dataBaseService:DataBaseService) { }
 
   ngOnInit():void{
-    this.getAtendimentos();
+    this.getAtendimento();
   }
 
-  getAtendimentos(){
+  getAtendimento(){
     this.dataBaseService.getAtendimentos().subscribe((responseData : Atendimento[]) => {
       console.log(responseData);
-      this.loadedAtendimentos = responseData;
-      console.log(this.loadedAtendimentos);     
+      this.loadedAtendimento = responseData;
+      console.log(this.loadedAtendimento);     
     });
   }
   apagarTudo(){
-    this.dataBaseService.deleteAllAtendimentos().subscribe( () => {
+    this.dataBaseService.deleteAllAtendimento().subscribe( () => {
       console.log('Apagou tudo');
-      this.loadedAtendimentos = [];
+      this.loadedAtendimento = [];
     });
   }
-
-
 }

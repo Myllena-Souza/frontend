@@ -1,5 +1,5 @@
-<p *ngIf="loadedAtendimentos.length < 1">Não existem atendimentos cadastrados!</p>
-<table class="tickets-table" *ngIf="loadedAtendimentos.length >=1">
+<p *ngIf="loadedAtendimento.length < 1">Não existem atendimentos cadastrados!</p>
+<table class="tickets-table" *ngIf="loadedAtendimento.length >=1">
     <thead>
       <tr>
         <th>Nome do cliente: </th>
@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let atendimento of loadedAtendimentos">
+      <tr *ngFor="let atendimento of loadedAtendimento">
         <td>{{ atendimento.nomeTutor}}</td>
         <td>{{ atendimento.nomeAnimal}}</td>
         <td>{{ atendimento.especieAnimal }}</td>
