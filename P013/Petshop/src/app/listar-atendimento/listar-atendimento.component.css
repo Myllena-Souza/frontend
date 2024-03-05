@@ -21,7 +21,7 @@
     }
   
     #btnEditar{
-      background-color: #0074f0;
+      background-color: #e100ff;
       color: white;
       border: none;
       border-radius: 5px;
@@ -32,11 +32,11 @@
     }
 
     #btnEditar:hover{
-      background-color: #004186;
+      background-color: #e100ff;
     }
 
     #btnDetalhes{
-      background-color: #0074f0;
+      background-color: #e100ff;
       color: white;
       border: none;
       border-radius: 5px;
@@ -46,5 +46,5 @@
     }
 
     #btnDetalhes:hover{
-      background-color: #004186;
+      background-color: #e100ff;
     }
