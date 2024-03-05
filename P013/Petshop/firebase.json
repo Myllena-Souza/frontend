@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "dist/petshop/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
