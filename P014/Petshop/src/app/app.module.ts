@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +7,9 @@ import { DetalharAtendimentoComponent } from './detalhar-atendimento/detalhar-at
 import { EditarAtendimentoComponent } from './editar-atendimento/editar-atendimento.component';
 import { ListarAtendimentoComponent } from './listar-atendimento/listar-atendimento.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
@@ -21,8 +23,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes } from '@angular/router';
-import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 import { AutenticaInterceptor } from './autentica.interceptor';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 const routes: Routes = [
   { path: 'principal', component: PrincipalComponent },
@@ -40,7 +42,9 @@ const routes: Routes = [
     DetalharAtendimentoComponent,
     EditarAtendimentoComponent,
     ListarAtendimentoComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    AutenticacaoComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,9 @@ const routes: Routes = [
     provideAnimationsAsync(),
     {provide: HTTP_INTERCEPTORS, useClass: AutenticaInterceptor, multi : true}
   
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
 
   bootstrap: [AppComponent]

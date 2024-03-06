@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-autenticacao',
   templateUrl: './autenticacao.component.html',
-  styleUrl: './autenticacao.component.css'
+  styleUrls: ['./autenticacao.component.css']
 })
 export class AutenticacaoComponent {
 
@@ -53,7 +53,7 @@ export class AutenticacaoComponent {
         console.log(responseData);
         this.estaCarregando = false;
         this.temErro = false;
-        this.router.navigate(['/cadastrarAtendimento']);
+        this.router.navigate(['/principal']);
         //Altera o estado de autenticação
         this.authService.setAutenticado(true);
       },
